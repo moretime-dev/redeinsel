@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>RedeInsel</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="./index.html">HOME</a></li>
+        <li><a href="./about.html">ÜBER UNS</a></li>
+        <li><a href="./kontakt.html">KONTAKT</a></li>
+      </ul>
+    </nav>
+    <header class="header orange-border">
+      <h1 class="blue">Die Rede<i class="red">Insel</i></h1>
+      <h2 class="red">"Orte für Worte"</h2>
+      <p>
+        Das/Ein partizipatives Kita Möbel <br />
+        Das/Ein partizipatives Kita-Raumkonzept
+      </p>
+    </header>
+    <main>
+      <section class="page-container">
+        <section class="content-wrapper">
+          <p class="warnung"></p>
+          <section id="kontaktformular">
+            <form onsubmit="return false">
+              <section id="inner">
+                <section id="kontaktheader">
+                  <label for="betreff">Betreff:</label
+                  ><input
+                    type="text"
+                    name="betreff"
+                    value="Interesse an der RedeInsel"
+                    required
+                  />
+                </section>
+                <section id="kontaktheader">
+                  <label for="email"></label>Ihre Email:<input
+                    type="email"
+                    name="email"
+                    placeholder="Bitte Emailadresse eintragen"
+                    required
+                  />
+                </section>
+                <section id="kontaktheader">
+                  <label for="name"></label>Ihr Name:<input
+                    type="text"
+                    name="name"
+                    placeholder="Bitte Ihren Namen eintragen"
+                    required
+                  />
+                </section>
+                <section id="kontaktheader">
+                  <label for="nachricht" id="nachricht-label"
+                    >Ihre Nachricht:</label
+                  >
+                  <textarea
+                    name="nachricht"
+                    id="nachricht"
+                    cols="30"
+                    rows="10"
+                    required
+                  ></textarea>
+                </section>
+
+                <button id="send-message">Abschicken</button>
+              </section>
+            </form>
+          </section>
+        </section>
+        <footer class="footer">
+          <a href="./impressum.html">Impressum</a>
+          <a href="./agbs.html">AGB's</a>
+        </footer>
+      </section>
+    </main>
+
+    <script src="./js/kontaktformular.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+  </body>
+</html>
