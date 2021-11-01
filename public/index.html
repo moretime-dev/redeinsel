@@ -9,18 +9,52 @@
   </head>
   <body>
     <nav>
-      <ul>
-        <li><a href="./index.html">HOME</a></li>
-        <li><a href="./about.html">ÜBER UNS</a></li>
-        <li><a href="./kontakt.html">KONTAKT</a></li>
-      </ul>
+      <section class="navbar">
+        <ul>
+          <li><a href="./index.html">HOME</a></li>
+          <li><a href="./about.html">ÜBER UNS</a></li>
+          <li><a href="./kontakt.html">KONTAKT</a></li>
+        </ul>
+      </section>
+      <section class="burger">
+        <button class="burger-menu">
+          <svg viewBox="0 0 100 80" width="40" height="40">
+            <rect width="100" height="10"></rect>
+            <rect y="30" width="100" height="10"></rect>
+            <rect y="60" width="100" height="10"></rect>
+          </svg>
+        </button>
+      </section>
+      <section class="overlay-nav">
+        <section class="close-btn">
+          <button type="button" class="overlay-nav-close-btn">
+            <svg viewBox="0 0 100 100" width="50" height="50">
+              <rect width="100" height="100" fill="var(--fill)" />
+              <path
+                d="M20,20 l60,60 m0,-60 l-60,60"
+                fill="none"
+                stroke="white"
+                stroke-width="15"
+              />
+            </svg>
+          </button>
+        </section>
+        <ul class="overlay-nav-linklist">
+          <li class="overlay-nav-link"><a href="./index.html">HOME</a></li>
+          <li class="overlay-nav-link"><a href="./about.html">ÜBER UNS</a></li>
+          <li class="overlay-nav-link"><a href="./kontakt.html">KONTAKT</a></li>
+        </ul>
+      </section>
     </nav>
     <header class="header orange-border">
       <h1 class="blue">Die Rede<i class="orange">Insel</i></h1>
       <h2 class="red">"Orte für Worte"</h2>
-      <p><strong>
-        Das / </strong><strong class="orange">Ein</strong> <strong>partizipatives Kita </strong><strong class="orange">Möbel</strong> <br />
-        <strong>Das / </strong><strong class="orange">Ein </strong><strong>partizipatives Kita-Raumkonzept</strong>
+      <p>
+        <strong> Das / </strong><strong class="orange">Ein</strong>
+        <strong>partizipatives Kita </strong
+        ><strong class="orange">Möbel</strong> <br />
+        <strong>Das / </strong><strong class="orange">Ein </strong
+        ><strong>partizipatives Kita-Raumkonzept</strong>
       </p>
     </header>
     <main>
@@ -205,22 +239,31 @@
               </p>
             </section>
             <section class="underline-text-last">
-              <strong>In einer thematischen Ausrichtung für<br></strong>
-              <strong class="red">Kinderschutz, Kinderrechte & Partizipation</strong>
+              <strong>In einer thematischen Ausrichtung für<br /></strong>
+              <strong class="red"
+                >Kinderschutz, Kinderrechte & Partizipation</strong
+              >
+            </section>
           </section>
+          <section class="quote">
+            <p class="quote-text">
+              <i
+                >"Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Repellendus voluptates expedita saepe eaque assumenda, rerum
+                reprehenderit maiores sequi illo ipsum!"</i
+              >
+            </p>
+            <p class="quote-author">Marina Schmitt - KiTa Spremberg</p>
+          </section>
+          <footer class="footer">
+            <a href="./impressum.html">Impressum</a>
+            <a href="./agbs.html">AGB's</a>
+          </footer>
         </section>
-        <section class="quote"><p class="quote-text">
-          <i>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus voluptates 
-          expedita saepe eaque assumenda, rerum reprehenderit maiores sequi illo ipsum!"</i></p>
-          <p class="quote-author">Marina Schmitt - KiTa Spremberg</p>
-        </section>
-        <footer class="footer">
-          <a href="./impressum.html">Impressum</a>
-          <a href="./agbs.html">AGB's</a>
-        </footer>
       </section>
     </main>
 
     <script src="./js/scriptMain.js"></script>
+    <script src="./js/overlayNav.js"></script>
   </body>
 </html>

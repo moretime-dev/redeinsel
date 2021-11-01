@@ -32,7 +32,7 @@ a:focus {
   outline: none;
 }
 
-nav {
+.navbar {
   display: flex;
   align-items: center;
   font-weight: 700;
@@ -343,4 +343,135 @@ textarea:focus,
   font-size: 1rem;
   font-weight: lighter;
   margin: 0 5em;
+}
+
+/** KONTAKTFORMULAR END*/
+
+/** OVERLAY NAV */
+
+.burger {
+  display: none;
+  position: absolute;
+  top: 3%;
+  left: 2%;
+  fill: rgb(255, 192, 0);
+  -webkit-filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.7));
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.7));
+}
+
+.burger-menu {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.overlay-nav {
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  background-color: #333333aa;
+  overflow: hidden;
+  color: white;
+  overflow-y: scroll;
+}
+
+.overlay-nav-linklist {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.overlay-nav-link {
+  margin: 5em auto;
+}
+
+.overlay-nav-link a {
+  color: white;
+  text-shadow: 1px 1px 6px rgb(34, 32, 28);
+}
+
+.close-btn {
+  position: absolute;
+  top: 2%;
+  left: 1.5%;
+}
+
+.overlay-nav-close-btn {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  border: 0;
+  font: 0/0 a;
+  text-shadow: none;
+  background: transparent no-repeat center;
+  color: transparent;
+  --fill: none;
+  --stroke: white;
+}
+
+/** OVERLAY NAV END */
+
+/** MEDIA QUERIES */
+@media screen and (max-width: 700px) {
+  .navbar {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .page-container {
+    max-width: 500px;
+    overflow-x: hidden;
+  }
+
+  .header,
+  .bilder,
+  .dimension,
+  .quote {
+    width: 22em;
+    margin: 2em auto;
+  }
+
+  .header {
+    margin-top: 5em;
+  }
+
+  .underline-text {
+    font-size: 0.8rem;
+    line-height: 0.8;
+  }
+
+  .quote {
+    margin: 5em auto 3em auto;
+  }
+
+  .quote-text {
+    font-size: 1.1rem;
+    width: 30ch;
+    text-align: center;
+  }
+
+  #kontaktformular {
+    width: 20em;
+    overflow-x: hidden;
+  }
+
+  input,
+  textarea,
+  #send-message {
+    width: 20em;
+  }
+
+  .nachricht-bestaetigung {
+    font-size: 1.2rem;
+    width: 30ch;
+    text-align: center;
+  }
 }

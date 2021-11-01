@@ -47,6 +47,7 @@ const handleFullViewClick = (e) => {
       fullview.classList.remove("visible");
       //   gallery.querySelector("a[aria-selected]").focus();
       break;
+
     case "prev":
       // Ausführliche Version
       nextImage = navigateDOM(
@@ -59,6 +60,7 @@ const handleFullViewClick = (e) => {
 
       showInFullView(nextImage);
       break;
+
     case "next":
       // Kompaktversion als Einzeiler
       showInFullView(
@@ -69,6 +71,8 @@ const handleFullViewClick = (e) => {
         ) || gallery.querySelector("img:first-of-type")
       );
       break;
+    default:
+      fullview.classList.remove("visible");
   }
 };
 
