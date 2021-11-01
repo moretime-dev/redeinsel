@@ -386,7 +386,7 @@ textarea:focus,
 }
 
 .overlay-nav-link {
-  margin: 5em auto;
+  margin: 2em auto;
 }
 
 .overlay-nav-link a {
@@ -427,7 +427,7 @@ textarea:focus,
   }
 
   .page-container {
-    max-width: 500px;
+    max-width: 95vw;
     overflow-x: hidden;
   }
 
@@ -435,7 +435,7 @@ textarea:focus,
   .bilder,
   .dimension,
   .quote {
-    width: 22em;
+    width: 80vw;
     margin: 2em auto;
   }
 
@@ -459,7 +459,7 @@ textarea:focus,
   }
 
   #kontaktformular {
-    width: 20em;
+    width: 80vw;
     overflow-x: hidden;
   }
 
