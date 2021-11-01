@@ -434,6 +434,12 @@ textarea:focus,
     overflow-x: hidden;
   }
 
+  .container,
+  .content-wrapper {
+    width: 100vw;
+    margin: auto;
+  }
+
   .header,
   .bilder,
   .dimension,
