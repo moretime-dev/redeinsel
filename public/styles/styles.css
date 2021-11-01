@@ -466,7 +466,7 @@ textarea:focus,
   input,
   textarea,
   #send-message {
-    width: 20em;
+    width: 80vw;
   }
 
   .nachricht-bestaetigung {
