@@ -389,6 +389,9 @@ textarea:focus,
   margin: 2em auto;
 }
 
+.overlay-nav-link:first-child {
+  margin-top: 0;
+}
 .overlay-nav-link a {
   color: white;
   text-shadow: 1px 1px 6px rgb(34, 32, 28);
