@@ -20,7 +20,7 @@ li {
 a {
   text-decoration: none;
   cursor: pointer;
-  color: rgb(240, 180, 1);
+  color: white;
   font-size: 2rem;
   font-family: "Poppins", serif;
   text-shadow: 1px 1px 1px rgb(122, 122, 122);
@@ -37,6 +37,7 @@ a:focus {
   align-items: center;
   font-weight: 700;
   margin-bottom: 1.5em;
+  background-color: rgb(255, 192, 0);
 }
 
 ul {
@@ -73,8 +74,7 @@ h4 {
 }
 
 .header {
-  margin: auto;
-  margin-bottom: 3em;
+  margin: 5em auto 3em auto;
   padding: 2em 0;
   text-align: center;
   width: 30em;
@@ -352,18 +352,18 @@ textarea:focus,
 
 .burger {
   display: none;
-  position: absolute;
-  top: 3%;
-  left: 2%;
-  fill: rgb(255, 192, 0);
-  -webkit-filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.7));
-  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.7));
 }
 
 .burger-menu {
   border: none;
   background-color: transparent;
   cursor: pointer;
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  fill: white;
+  -webkit-filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.7));
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.7));
 }
 
 .overlay-nav {
@@ -428,6 +428,12 @@ textarea:focus,
 
   .burger {
     display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 10vh;
+    background-color: rgb(255, 192, 0);
   }
 
   .page-container {
@@ -449,7 +455,7 @@ textarea:focus,
   }
 
   .header {
-    margin-top: 5em;
+    margin-top: 7em;
   }
 
   .underline-text {
