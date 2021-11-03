@@ -85,3 +85,32 @@ function navigateDOM(current, proceed, checkFound) {
 }
 
 galleryFullView.addEventListener("click", handleFullViewClick);
+
+/** Slider */
+
+const sliderNext = document.querySelector(".slider-next");
+const sliderPrev = document.querySelector(".slider-prev");
+const singleImages = document.querySelectorAll(".img-gallery");
+
+let translateLeft = 100;
+let translateRight = 100;
+
+sliderNext.addEventListener("click", () => {
+  singleImages.forEach((img) => {
+    img.style.transform = `translate(-${translateLeft}%, 0)`;
+    img.style.transition = "all 0.5s ease-in-out";
+  });
+  if (translateLeft > 300) {
+    translateLeft = 0;
+  } else translateLeft += 100;
+});
+
+// sliderPrev.addEventListener("click", () => {
+//   singleImages.forEach((img) => {
+//     img.style.transform = `translate(+${translateRight}%, 0)`;
+//     img.style.transition = "all 0.5s ease-in-out";
+//   });
+//   if (translateRight > 300) {
+//     translateRight = 0;
+//   } else translateRight += 100;
+// });
