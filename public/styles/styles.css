@@ -32,11 +32,14 @@ a:focus {
   outline: none;
 }
 
+.nav {
+  margin-bottom: 1.5em;
+}
+
 .navbar {
   display: flex;
   align-items: center;
   font-weight: 700;
-  margin-bottom: 1.5em;
   background-color: rgb(255, 192, 0);
 }
 
@@ -437,6 +440,18 @@ textarea:focus,
 /** OVERLAY NAV END */
 
 /** MEDIA QUERIES */
+
+@media screen and (max-width: 1800px) {
+  .bilder-slider-frame,
+  .bilder {
+    width: 80vw;
+  }
+
+  .slider-next {
+    font-size: 1.2rem;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   .navbar {
     display: none;
@@ -464,14 +479,13 @@ textarea:focus,
   }
 
   .header,
-  .bilder,
   .dimension {
     width: 80vw;
     margin: 2em auto;
   }
 
   .header {
-    margin-top: 7em;
+    margin-top: 12em;
   }
 
   .underline-text {
