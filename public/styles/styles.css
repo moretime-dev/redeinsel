@@ -505,4 +505,10 @@ textarea:focus,
     width: 30ch;
     text-align: center;
   }
+
+  .slider-next {
+    width: 8em;
+    height: 2em;
+    font-size: 0.8rem;
+  }
 }
