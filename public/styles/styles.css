@@ -526,3 +526,9 @@ textarea:focus,
     font-size: 0.8rem;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .header {
+    margin-top: 5em;
+  }
+}
