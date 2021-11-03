@@ -529,6 +529,6 @@ textarea:focus,
 
 @media screen and (max-width: 600px) {
   .header {
-    margin-top: 5em;
+    margin-top: 8em;
   }
 }
