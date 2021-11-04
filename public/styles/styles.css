@@ -166,6 +166,7 @@ h4 {
 }
 
 .bilder {
+  position: relative;
   width: 110em;
   max-width: 1800px;
   border: 6px solid rgb(255, 192, 0);
@@ -184,16 +185,26 @@ img {
   cursor: pointer;
 }
 
-.slider-next {
+.slider-next,
+.slider-prev {
+  position: absolute;
   margin: 0 auto 2em auto;
-  width: 8em;
-  height: 2em;
-  font-size: 2rem;
-  color: white;
-  background-color: rgb(255, 192, 0);
+  background-color: transparent;
   border: none;
-  border-radius: 2em;
   cursor: pointer;
+  z-index: 1;
+  -webkit-filter: drop-shadow(2px 1px 1px rgba(0, 0, 0, 0.7));
+  filter: drop-shadow(2px 1px 1px rgba(0, 0, 0, 0.7));
+}
+
+.slider-next {
+  top: 40%;
+  right: 1%;
+}
+
+.slider-prev {
+  top: 40%;
+  left: 1%;
 }
 
 #gallery-fullview {
@@ -447,7 +458,8 @@ textarea:focus,
     width: 80vw;
   }
 
-  .slider-next {
+  .slider-next,
+  .slider-prev {
     font-size: 1.2rem;
   }
 }
@@ -520,7 +532,8 @@ textarea:focus,
     text-align: center;
   }
 
-  .slider-next {
+  .slider-next,
+  .slider-prev {
     width: 8em;
     height: 2em;
     font-size: 0.8rem;

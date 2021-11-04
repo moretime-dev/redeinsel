@@ -92,25 +92,30 @@ const sliderNext = document.querySelector(".slider-next");
 const sliderPrev = document.querySelector(".slider-prev");
 const singleImages = document.querySelectorAll(".img-gallery");
 
-let translateLeft = 100;
-let translateRight = 100;
+let translate = 100;
+let position = -100;
 
 sliderNext.addEventListener("click", () => {
+  if (position === 300) {
+    position = -100;
+  } else position += 100;
+
   singleImages.forEach((img) => {
-    img.style.transform = `translate(-${translateLeft}%, 0)`;
+    img.style.transform = `translate(-${position + translate}%, 0)`;
     img.style.transition = "all 0.5s ease-in-out";
   });
-  if (translateLeft > 300) {
-    translateLeft = 0;
-  } else translateLeft += 100;
+
+  console.log(position);
 });
 
-// sliderPrev.addEventListener("click", () => {
-//   singleImages.forEach((img) => {
-//     img.style.transform = `translate(+${translateRight}%, 0)`;
-//     img.style.transition = "all 0.5s ease-in-out";
-//   });
-//   if (translateRight > 300) {
-//     translateRight = 0;
-//   } else translateRight += 100;
-// });
+sliderPrev.addEventListener("click", () => {
+  if (position === -100) {
+    position = 300;
+  } else position -= 100;
+
+  singleImages.forEach((img) => {
+    img.style.transform = `translate(-${position + translate}%, 0)`;
+    img.style.transition = "all 0.5s ease-in-out";
+  });
+  console.log(position);
+});
