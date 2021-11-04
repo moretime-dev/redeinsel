@@ -279,6 +279,8 @@ img {
   top: 0rem;
   width: 8rem;
   height: calc(100% - 6rem);
+  -webkit-filter: drop-shadow(2px 1px 1px rgba(0, 0, 0, 0.7));
+  filter: drop-shadow(2px 1px 1px rgba(0, 0, 0, 0.7));
 }
 
 #gallery-fullview button[value="prev"] {
@@ -490,6 +492,21 @@ textarea:focus,
   .content-wrapper {
     width: 100vw;
     margin: auto;
+  }
+
+  #gallery-fullview button[value="prev"],
+  #gallery-fullview button[value="next"] {
+    width: 10%;
+    height: 20%;
+    top: 37%;
+  }
+
+  #gallery-fullview button[value="prev"] {
+    left: 6%;
+  }
+
+  #gallery-fullview button[value="next"] {
+    right: 6%;
   }
 
   .header,
