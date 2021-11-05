@@ -52,7 +52,6 @@ ul {
   width: 30em;
 }
 
-h1,
 h3 {
   margin-bottom: 0.5em;
 }
@@ -76,11 +75,25 @@ h4 {
   color: rgb(221, 166, 2);
 }
 
+.logo {
+  position: absolute;
+  left: 3%;
+  /* padding: 0.5em;
+  box-shadow: 1px 1px 6px rgb(112, 84, 0);
+  background-color: rgb(250, 203, 64); */
+}
+
 .header {
   margin: 5em auto 3em auto;
   padding: 2em 0;
   text-align: center;
-  width: 30em;
+  width: 35em;
+}
+
+.header-text {
+  text-align: left;
+  margin-top: 2em;
+  padding: 0 2em;
 }
 
 .orange-border {
